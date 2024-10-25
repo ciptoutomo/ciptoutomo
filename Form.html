@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janda Pirang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="navbar-logo">Logo</a>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-item">Home</a></li>
+                    <li><a href="profile.html" class="navbar-item">Profile</a></li>
+                    <li><a href="Galeri.html" class="navbar-item">Galeri</a></li>
+                    <li><a href="kontak.html" class="navbar-item">Kontak</a></li>
+                    <li><a href="Form.html" class="navbar-item">Form</a></li>
+                    <li><a href="login.html" class="navbar-item navbar-button">Login</a></li>
+                </ul>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav> -->
+        
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="galeri/logo.png" alt="Bootstrap" width="40" height="35">
+            </a>
+            <a class="navbar-brand" href="#">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"/>
+                </svg>
+                OI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Form.html">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="registration-form">
+            <div class="form-header">
+                <h1>Registration Form</h1>
+            </div>
+            <div class="form-body">
+                <div class="form-section">
+                    <h2>Informasi Pribadi</h2>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="nama_depan">Nama Depan</label>
+                            <input type="text" id="nama_depan" name="nama_depan" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="nama_belakang">Nama Belakang</label>
+                            <input type="text" id="nama_belakang" name="nama_belakang" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" id="alamat" name="alamat" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="no_hp">No HP</label>
+                            <input type="number" id="no_hp" name="no_hp" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="agama">Agama</label>
+                            <select id="agama" name="agama" required>
+                                <option value="">--Silahkan pilih--</option>
+                                <option value="islam">Islam</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="katolik">Katolik</option>
+                                <option value="konghucu">Konghucu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="pekerjaan">Pekerjaan</label>
+                            <select id="pekerjaan" name="pekerjaan" required>
+                                <option value="">--Silahkan pilih--</option>
+                                <option value="swasta">Swasta</option>
+                                <option value="pns">PNS</option>
+                                <option value="tni">TNI</option>
+                                <option value="polri">Polri</option>
+                                <option value="dokter">Dokter</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="dpr">DPR</option>
+                                <option value="guru">Guru</option>
+                                <option value="dosen">Dosen</option>
+                            </select>
+                        </div>
+                        <div class="form-group right">
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                                <option value="">--Silahkan pilih--</option>
+                                <option value="laki-laki">Laki-laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="nik">NIK / No KTP</label>
+                            <input type="number" id="nik" name="nik" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="url_facebook">url Facebook</label>
+                            <input type="url" id="url_facebook" name="url_facebook">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="url_website">Url Website</label>
+                            <input type="url" id="url_website" name="url_website">
+                        </div>
+                        <div class="form-group right">
+                            <label for="url_instagram">url Instagram</label>
+                            <input type="url" id="url_instagram" name="url_instagram">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="url_tiktok">Url Tiktok</label>
+                            <input type="url" id="url_tiktok" name="url_tiktok">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Informasi Orang Tua</h2>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="nama_ayah">Nama Ayah</label>
+                            <input type="text" id="nama_ayah" name="nama_ayah" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="nama_ibu">Nama Ibu</label>
+                            <input type="text" id="nama_ibu" name="nama_ibu" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="alamat_ayah">Alamat Ayah</label>
+                            <input type="text" id="alamat_ayah" name="alamat_ayah" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="alamat_ibu">Alamat Ibu</label>
+                            <input type="text" id="alamat_ibu" name="alamat_ibu" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="nik_ayah">NIK Ayah</label>
+                            <input type="number" id="nik_ayah" name="nik_ayah" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="nik_ibu">NIK Ibu</label>
+                            <input type="number" id="nik_ibu" name="nik_ibu" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
+                            <select id="pekerjaan_ayah" name="pekerjaan_ayah" required>
+                                <option value="">--Silahkan pilih--</option>
+                                <option value="swasta">Swasta</option>
+                                <option value="pns">PNS</option>
+                                <option value="tni">TNI</option>
+                                <option value="polri">Polri</option>
+                                <option value="dokter">Dokter</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="dpr">DPR</option>
+                                <option value="guru">Guru</option>
+                                <option value="dosen">Dosen</option>
+                            </select>
+                        </div>
+                        <div class="form-group right">
+                            <label for="pekerjaan_ibu">Pekerjaan Ibu</label>
+                            <select id="pekerjaan_ibu" name="pekerjaan_ibu" required>
+                                <option value="">--Silahkan pilih--</option>
+                                <option value="swasta">Swasta</option>
+                                <option value="pns">PNS</option>
+                                <option value="tni">TNI</option>
+                                <option value="polri">Polri</option>
+                                <option value="dokter">Dokter</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="dpr">DPR</option>
+                                <option value="guru">Guru</option>
+                                <option value="dosen">Dosen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="no_hp_ayah">No HP Ayah</label>
+                            <input type="number" id="no_hp_ayah" name="no_hp_ayah" required>
+                        </div>
+                        <div class="form-group right">
+                            <label for="no_hp_ibu">No HP Ibu</label>
+                            <input type="number" id="no_hp_ibu" name="no_hp_ibu" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Informasi Akun</h2>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group left">
+                            <label for="Konfirmasi_password">Konfirmasi Password</label>
+                            <input type="password" id="Konfirmasi_password" name="Konfirmasi_password" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Layanan</a>
+            <a href="#">Kontak</a>
+        </div>
+        <p>&copy; 2024 Janda Muda. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</body>
+</html>
